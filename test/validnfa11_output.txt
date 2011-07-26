@@ -1,0 +1,13 @@
+; q1
+b; q1
+a; q1,q2,q5
+a; q1,q2,q5
+b; q1,q3,q6
+ACCEPT
+
+; q1
+b; q1
+a; q1,q2,q5
+b; q1,q3,q6
+a; q1,q2,q5
+REJECT

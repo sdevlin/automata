@@ -1,0 +1,25 @@
+; q1
+a; q10,q12,q2,q21,q23,q3,q7
+a; q1,q11,q15,q5,q8,q9
+a; q10,q12,q17,q2,q21,q23,q3,q7
+b; q22,q4,q8,q9
+a; q13,q14,q15,q24,q5
+b; q15,q16,q20,q6
+a; q10,q12,q18,q23,q3
+b; q4
+a; q13,q14,q15,q24,q5
+b; q15,q16,q20,q6
+ACCEPT
+
+; q1
+a; q10,q12,q2,q21,q23,q3,q7
+b; q22,q4,q8,q9
+b; q13
+a;
+a;
+b;
+a;
+b;
+a;
+b;
+REJECT

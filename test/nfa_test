@@ -1,0 +1,19 @@
+#!/usr/bin/ruby
+
+path = File.expand_path '../..', __FILE__
+$:.unshift path
+
+Dir.chdir path do
+  1.upto 10 do |i|
+    nfa_name = "validnfa#{i}"
+    `app/nfa test/#{nfa_name}.txt < test/#{nfa_name}_input.txt > tmp`
+    diffs = `diff -w tmp test/#{nfa_name}_output.txt`
+    if diffs.any?
+      puts "#{nfa_name} failed:"
+      puts diffs
+    end
+  end
+  `rm tmp`
+  
+  # how to do the invalid ones? whatever
+end

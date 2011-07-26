@@ -1,0 +1,29 @@
+#!/usr/bin/ruby
+
+if ARGV.length != 1
+  puts 'usage: nfa nfa.txt < input.txt > output.txt'
+  return
+end
+
+$:.unshift File.expand_path '../..', __FILE__
+require 'lib/nfa'
+
+rules = File.readlines ARGV[0]
+nfa = Nfa.new rules
+
+num_inputs = STDIN.readline.to_i
+num_inputs.times do |i|
+  inputs = STDIN.readline.chomp.split ','
+  nfa.reset
+  puts "; #{nfa.current_states.sort.join(',')}"
+  inputs.each do |input|
+    nfa.read_input input
+    puts "#{input}; #{nfa.current_states.sort.join(',')}"
+  end
+  if nfa.accept?
+    puts 'ACCEPT'
+  else
+    puts 'REJECT'
+  end
+  puts if i + 1 < num_inputs
+end

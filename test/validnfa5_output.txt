@@ -1,0 +1,10 @@
+; q1,q2
+a; 
+b; 
+a; 
+a; 
+b; 
+REJECT
+
+; q1,q2
+ACCEPT

@@ -1,0 +1,13 @@
+A:a,b
+Q:q1,q2,q3,q4,q5,q6
+T:q1,e,q2
+T:q1,e,q3
+T:q2,a,q4
+T:q3,a,q6
+T:q4,b,q4
+T:q4,a,q5
+T:q4,e,q1
+T:q6,a,q3
+T:q6,b,q3
+S:q1
+F:q5,q3

@@ -1,0 +1,10 @@
+; q1
+one; q1,q2,q3
+one; q1,q2,q3,q4
+ACCEPT
+
+; q1
+zero; q1
+one; q1,q2,q3
+zero; q1,q3
+REJECT

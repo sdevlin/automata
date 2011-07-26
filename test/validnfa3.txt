@@ -1,0 +1,11 @@
+A:0,1
+Q:q1,q2,q3,q4,q5
+T:q1,e,q4
+T:q4,e,q2
+T:q2,e,q1
+T:q4,0,q5
+T:q5,e,q4
+T:q2,1,q3
+T:q3,1,q2
+S:q1
+F:q5

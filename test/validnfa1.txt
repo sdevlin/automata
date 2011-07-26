@@ -1,0 +1,12 @@
+A:zero,one
+Q:q1,q2,q3,q4
+T:q1,zero,q1
+T:q1,one,q2
+T:q1,one,q1
+T:q2,zero,q3
+T:q2,e,q3
+T:q3,one,q4
+T:q4,zero,q4
+T:q4,one,q4
+S:q1
+F:q4
